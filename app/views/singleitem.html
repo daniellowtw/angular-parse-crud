@@ -1,0 +1,14 @@
+<p>This is the singleItem view.</p>
+        {{item}}
+
+
+<form ng-submit="save()">
+    <input type="text" ng-model="item.name">
+    <input type="text" ng-model="item.weight">
+
+    <label>
+        <input type="checkbox" ng-model="item.in_stock"> In stock
+    </label>
+
+    <button type="submit">Save</button>
+</form>
